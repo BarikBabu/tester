@@ -1,10 +1,89 @@
-body, html{
-	background-image: url("images/bg11.jpg");
-	height: 100%;
+body, html {
+    height: 100%;
     margin: 0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
- 
 }
+
+
+.hero-image {
+  background-image: url("images/bg4.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /*-webkit-animation: mymove 7s infinite; /* Chrome, Safari, Opera */
+   /* animation: mymove 7s infinite; */
+}
+
+.hero-text {
+  text-align: center;
+  float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+   font-family: 'Caesar Dressing';
+    -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+    animation: mymove 5s;
+
+}
+.shadow {
+	
+/*	border-left: 2px solid #FFFFFF;
+	border-right: 2px solid #FFFFFF;
+	border-top: 10px solid #FFFFFF;
+	border-bottom: 10px solid #FFFFFF;
+	
+	padding-top: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 10px;
+	/*border-radius: 10px;
+background: radial-gradient(circle, darkblue , transparent, black);
+	border-top: 4px solid darkblue;
+	border-bottom: 4px solid darkblue;*/
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {opacity: 0;}
+}
+
+/* Chrome, Safari, Opera 
+@-webkit-keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+}
+
+ Standard syntax 
+@keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+} */
